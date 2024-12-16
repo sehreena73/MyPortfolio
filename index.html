@@ -2,22 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Responsive Personal Portfolio Website Design</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+     <!-- custom css -->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact Form</h1>
-    <form action="contact.php" method="POST">
-        <label for="name">Full Name:</label>
-        <input type="text" name="name" id="name" required><br><br>
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br><br>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>            
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
 
-        <label for="message">Message:</label><br>
-        <textarea name="message" id="message" required></textarea><br><br>
+        </nav>
+     </header>
 
-        <button type="submit">Send Message</button>
-    </form>
+     <!-- home section design -->
+      <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sehreena Shahid</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am a young web development enthusiast with a passion for creating dynamic websites and landing pages. I specialize in HTML and CSS, and I'm constantly expanding my skills to bring creative digital experiences to life. My goal is to build a successful career as a front-end developer, crafting user-friendly designs that stand out.  </p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="self.glow.png" alt="My Picture">
+        </div>
+      </section>
+      <!-- about section design -->
+       <section class="about" id="about">
+        <div class="about-img">
+            <img src="self.glow.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>I'm a passionate front-end developer with a keen interest in crafting visually appealing and functional websites.I started my journey in web development to combine my love for creativity with technology.My focus is on building user-centric designs using HTML,CSS, and JavaScript and I'm constantly learning new techniques to improve my skills.When I'm not coding, I enjoy exploring the latest web trends and finding new ways to make the web a better place for users. I aspire to work with innovative teams,creating solutions that make a difference.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+       </section>
+
+       <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed accusamus enim, id quam ducimus natus atque nobis deleniti excepturi temporibus quibusdam obcaecati suscipit quas animi at praesentium facere dolor.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bxs-paint'></i>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed accusamus enim, id quam ducimus natus atque nobis deleniti excepturi temporibus quibusdam obcaecati suscipit quas animi at praesentium facere dolor.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bx-bar-chart-alt' ></i>
+                    <h3>Digital Marketing </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed accusamus enim, id quam ducimus     ,./.natus atque nobis deleniti excepturi temporibus quibusdam obcaecati suscipit quas animi at praesentium facere dolor.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--portfolio section design-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="portfolio.1.jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="portfolio.2.jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="portfolio.3.jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="portfolio.4.jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="portfolio.5.jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="portfolio.6 (2).jpg" alt="Project Image" class="project-image">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, totam.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact section design-->
+
+        <form action="https://formspree.io/f/mrbgwppn" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+
+
+        <!-- footer design -->
+         <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Sehreena Shahid | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+         </footer>
+
+
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js02.0.12"></script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+        <!-- custom js -->
+         <script src="js/script.js"></script>
 </body>
-</html>
+</head>
+
